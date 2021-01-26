@@ -1,5 +1,8 @@
 from django import forms
  
+
+
+
 class CommentForm(forms.Form):
     your_name =forms.CharField(max_length=20)
     comment_text =forms.CharField(widget=forms.Textarea)
@@ -10,4 +13,4 @@ class CommentForm(forms.Form):
  
  
 class SearchForm(forms.Form):
-    title = forms.CharField(max_length=20)
+     title = forms.CharField(max_length=20)
